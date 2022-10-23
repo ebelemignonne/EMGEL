@@ -762,6 +762,46 @@ main {
 .clients-item img:hover { filter: grayscale(0); }
 
 
+/**
+ * #Certification 
+ */
+
+.Certification { margin-bottom: 15px; }
+
+.Certification-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+}
+
+.Certification-item {
+  min-width: 30%;
+  scroll-snap-align: start;
+}
+
+.Certification-item img {
+  width: 100%;
+  /* filter: grayscale(1); */
+  /* transition: var(--transition-1); */
+}
+
+/* .Certification-item img:hover { filter: grayscale(0); } */
+
+.certif:hover{
+-ms-transform: scale(2) translate(0px); /* IE 9 */
+-webkit-transform: scale(2) translate(0px); /* Safari 1-8 */
+transform: scale(2) translate(0px);
+transition: 2s;
+}
 
 
 
