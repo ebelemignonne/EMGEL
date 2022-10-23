@@ -760,6 +760,39 @@ main {
 }
 
 .clients-item img:hover { filter: grayscale(0); }
+/**
+ * #Mes technos  
+ */
+
+.Mes-technos { margin-bottom: 15px; }
+
+.Mes-technos-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 25px;
+}
+
+.Mes-technos-item {
+  min-width: 25%;
+  scroll-snap-align: start;
+}
+
+.Mes-technos-item img {
+  width: 50%;
+  /* filter: grayscale(1); */
+  /* transition: var(--transition-1); */
+}
+
+.Mes-technos-item img:hover { filter: grayscale(0); }
 
 
 /**
@@ -799,7 +832,7 @@ main {
 .certif:hover{
 -ms-transform: scale(2) translate(0px); /* IE 9 */
 -webkit-transform: scale(2) translate(0px); /* Safari 1-8 */
-transform: scale(2) translate(0px);
+transform: scale(2) rotate(360deg);
 transition: 2s;
 }
 
